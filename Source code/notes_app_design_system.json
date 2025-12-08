@@ -1,0 +1,570 @@
+{
+  "designSystem": {
+    "name": "Modern Notes & Reminder App UI",
+    "version": "1.0",
+    "description": "A comprehensive design system for notes, reminders, and text editing applications with clean, minimal aesthetics",
+    "platform": "iOS-inspired, cross-platform compatible"
+  },
+  "colorPalette": {
+    "primary": {
+      "purple": "#8B5CF6",
+      "purpleLight": "#A78BFA",
+      "purpleDark": "#7C3AED"
+    },
+    "accent": {
+      "orange": "#FB923C",
+      "yellow": "#FDE047",
+      "pink": "#F472B6",
+      "red": "#EF4444",
+      "green": "#10B981",
+      "blue": "#3B82F6"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "offWhite": "#F9FAFB",
+      "gray50": "#F3F4F6",
+      "gray100": "#E5E7EB",
+      "gray200": "#D1D5DB",
+      "gray300": "#9CA3AF",
+      "gray400": "#6B7280",
+      "gray500": "#4B5563",
+      "gray700": "#374151",
+      "gray900": "#111827",
+      "black": "#000000"
+    },
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F9FAFB",
+      "tertiary": "#F3F4F6",
+      "dark": "#1F2937",
+      "overlay": "rgba(0, 0, 0, 0.5)"
+    },
+    "semantic": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "highlights": {
+      "yellow": "#FEF3C7",
+      "purple": "#EDE9FE",
+      "blue": "#DBEAFE",
+      "pink": "#FCE7F3",
+      "green": "#D1FAE5"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif",
+      "secondary": "'SF Pro Text', -apple-system, sans-serif",
+      "mono": "'SF Mono', 'Monaco', 'Courier New', monospace"
+    },
+    "fontSize": {
+      "xs": "11px",
+      "sm": "13px",
+      "base": "15px",
+      "md": "17px",
+      "lg": "20px",
+      "xl": "24px",
+      "2xl": "28px",
+      "3xl": "34px",
+      "4xl": "40px"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "heavy": 800
+    },
+    "lineHeight": {
+      "tight": "1.2",
+      "normal": "1.5",
+      "relaxed": "1.625",
+      "loose": "1.75"
+    }
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "2xl": "24px",
+    "3xl": "32px",
+    "4xl": "40px",
+    "5xl": "48px"
+  },
+  "borderRadius": {
+    "none": "0px",
+    "sm": "4px",
+    "md": "8px",
+    "lg": "12px",
+    "xl": "16px",
+    "2xl": "20px",
+    "3xl": "24px",
+    "full": "9999px",
+    "noteCard": "16px",
+    "modal": "20px",
+    "button": "12px"
+  },
+  "shadows": {
+    "none": "none",
+    "sm": "0 1px 2px rgba(0, 0, 0, 0.05)",
+    "md": "0 4px 6px rgba(0, 0, 0, 0.07)",
+    "lg": "0 10px 15px rgba(0, 0, 0, 0.1)",
+    "xl": "0 20px 25px rgba(0, 0, 0, 0.15)",
+    "card": "0 2px 8px rgba(0, 0, 0, 0.08)",
+    "floating": "0 8px 16px rgba(0, 0, 0, 0.12)",
+    "modal": "0 20px 40px rgba(0, 0, 0, 0.2)"
+  },
+  "layoutPatterns": {
+    "cardGrid": {
+      "description": "Masonry-style card layout for notes listing",
+      "gap": "12px",
+      "columns": {
+        "mobile": 1,
+        "tablet": 2,
+        "desktop": 3
+      },
+      "cardPadding": "16px",
+      "cardRadius": "16px"
+    },
+    "detailView": {
+      "description": "Full-screen note detail view with editing capabilities",
+      "padding": "20px",
+      "maxWidth": "100%",
+      "background": "white"
+    },
+    "listView": {
+      "description": "Compact list view for notes with thumbnails",
+      "itemHeight": "variable",
+      "itemPadding": "16px",
+      "divider": "1px solid #E5E7EB"
+    }
+  },
+  "componentStyles": {
+    "navigationBar": {
+      "height": "44px",
+      "padding": "12px 16px",
+      "background": "transparent or blur",
+      "backButtonSize": "24px",
+      "titleFontSize": "17px",
+      "titleFontWeight": 600,
+      "actionButtonSize": "40px"
+    },
+    "searchBar": {
+      "height": "40px",
+      "borderRadius": "12px",
+      "background": "#F3F4F6",
+      "padding": "8px 12px",
+      "iconSize": "20px",
+      "fontSize": "15px",
+      "placeholderColor": "#9CA3AF"
+    },
+    "noteCard": {
+      "primary": {
+        "background": "#FFFFFF",
+        "borderRadius": "16px",
+        "padding": "16px",
+        "minHeight": "120px",
+        "shadow": "0 2px 8px rgba(0, 0, 0, 0.08)",
+        "border": "none"
+      },
+      "withImage": {
+        "imageHeight": "120px",
+        "imageRadius": "12px",
+        "imagePosition": "top"
+      },
+      "locked": {
+        "overlay": "rgba(0, 0, 0, 0.05)",
+        "iconSize": "24px",
+        "iconColor": "#6B7280"
+      }
+    },
+    "textEditor": {
+      "toolbar": {
+        "height": "56px",
+        "background": "#1F2937",
+        "borderRadius": "28px",
+        "padding": "8px 12px",
+        "position": "floating",
+        "bottom": "16px",
+        "shadow": "0 8px 16px rgba(0, 0, 0, 0.2)"
+      },
+      "toolbarButton": {
+        "size": "40px",
+        "borderRadius": "20px",
+        "iconSize": "20px",
+        "activeColor": "#8B5CF6",
+        "inactiveColor": "#D1D5DB"
+      },
+      "formattingMenu": {
+        "background": "#FFFFFF",
+        "borderRadius": "16px",
+        "padding": "16px",
+        "shadow": "0 8px 24px rgba(0, 0, 0, 0.15)",
+        "itemHeight": "44px",
+        "itemSpacing": "8px"
+      }
+    },
+    "avatars": {
+      "single": {
+        "size": "40px",
+        "borderRadius": "50%",
+        "border": "2px solid #FFFFFF"
+      },
+      "group": {
+        "size": "32px",
+        "overlap": "-8px",
+        "maxVisible": 3
+      }
+    },
+    "badges": {
+      "category": {
+        "height": "28px",
+        "padding": "6px 12px",
+        "borderRadius": "14px",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "background": "#1F2937",
+        "color": "#FFFFFF"
+      },
+      "tag": {
+        "height": "24px",
+        "padding": "4px 10px",
+        "borderRadius": "12px",
+        "fontSize": "12px",
+        "fontWeight": 500
+      }
+    },
+    "buttons": {
+      "fab": {
+        "size": "56px",
+        "borderRadius": "28px",
+        "elevation": "8px",
+        "background": "#1F2937",
+        "color": "#FFFFFF",
+        "iconSize": "24px",
+        "position": "fixed",
+        "bottom": "24px",
+        "right": "24px"
+      },
+      "checkButton": {
+        "size": "40px",
+        "borderRadius": "20px",
+        "background": "#1F2937",
+        "checkedBackground": "#10B981",
+        "iconSize": "20px"
+      },
+      "iconButton": {
+        "size": "40px",
+        "borderRadius": "20px",
+        "iconSize": "20px",
+        "activeBackground": "#F3F4F6"
+      }
+    },
+    "checkboxes": {
+      "size": "24px",
+      "borderRadius": "50%",
+      "borderWidth": "2px",
+      "borderColor": "#D1D5DB",
+      "checkedColor": "#10B981",
+      "checkmarkSize": "14px"
+    },
+    "audioPlayer": {
+      "height": "56px",
+      "borderRadius": "16px",
+      "background": "#1F2937",
+      "padding": "12px 16px",
+      "playButtonSize": "32px",
+      "waveformColor": "#FFFFFF",
+      "waveformHeight": "32px",
+      "timeColor": "#FFFFFF",
+      "timeFontSize": "13px"
+    },
+    "drawingCanvas": {
+      "background": "#FFFFFF",
+      "toolbar": {
+        "height": "56px",
+        "position": "bottom",
+        "background": "transparent",
+        "buttonSize": "40px",
+        "buttonSpacing": "8px"
+      },
+      "tools": {
+        "penSize": ["2px", "4px", "8px"],
+        "colors": ["#8B5CF6", "#000000", "#FB923C", "#EF4444", "#10B981"],
+        "eraser": true
+      }
+    },
+    "actionSheet": {
+      "background": "#FFFFFF",
+      "borderRadius": "20px 20px 0 0",
+      "padding": "24px",
+      "itemHeight": "56px",
+      "itemSpacing": "0px",
+      "iconSize": "24px",
+      "dividerColor": "#E5E7EB",
+      "destructiveColor": "#EF4444"
+    },
+    "contextMenu": {
+      "background": "#FFFFFF",
+      "borderRadius": "16px",
+      "padding": "8px",
+      "itemHeight": "44px",
+      "itemPadding": "12px 16px",
+      "iconSize": "20px",
+      "fontSize": "15px",
+      "shadow": "0 8px 24px rgba(0, 0, 0, 0.15)"
+    }
+  },
+  "textFormatting": {
+    "highlightColors": {
+      "yellow": "#FEF3C7",
+      "purple": "#EDE9FE",
+      "blue": "#DBEAFE",
+      "pink": "#FCE7F3",
+      "green": "#D1FAE5"
+    },
+    "styles": {
+      "bold": {
+        "fontWeight": 700
+      },
+      "italic": {
+        "fontStyle": "italic"
+      },
+      "underline": {
+        "textDecoration": "underline"
+      },
+      "strikethrough": {
+        "textDecoration": "line-through"
+      },
+      "code": {
+        "fontFamily": "monospace",
+        "background": "#F3F4F6",
+        "padding": "2px 6px",
+        "borderRadius": "4px",
+        "fontSize": "0.9em"
+      }
+    },
+    "headings": {
+      "h1": {
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "lineHeight": "1.3",
+        "marginBottom": "16px"
+      },
+      "h2": {
+        "fontSize": "24px",
+        "fontWeight": 600,
+        "lineHeight": "1.35",
+        "marginBottom": "12px"
+      },
+      "h3": {
+        "fontSize": "20px",
+        "fontWeight": 600,
+        "lineHeight": "1.4",
+        "marginBottom": "10px"
+      }
+    },
+    "lists": {
+      "bulletIndent": "20px",
+      "bulletSize": "6px",
+      "numberIndent": "24px",
+      "itemSpacing": "8px"
+    }
+  },
+  "interactionStates": {
+    "default": {
+      "opacity": 1,
+      "scale": 1
+    },
+    "hover": {
+      "opacity": 0.8,
+      "scale": 1.02,
+      "transition": "150ms ease-out"
+    },
+    "pressed": {
+      "opacity": 0.6,
+      "scale": 0.98,
+      "transition": "100ms ease-in"
+    },
+    "disabled": {
+      "opacity": 0.4,
+      "cursor": "not-allowed"
+    },
+    "focused": {
+      "outline": "2px solid #8B5CF6",
+      "outlineOffset": "2px"
+    }
+  },
+  "animations": {
+    "quickFade": {
+      "duration": "150ms",
+      "easing": "ease-out"
+    },
+    "standard": {
+      "duration": "300ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "slow": {
+      "duration": "500ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)"
+    },
+    "spring": {
+      "duration": "400ms",
+      "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)"
+    },
+    "transitions": {
+      "slideUp": {
+        "duration": "300ms",
+        "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+        "transform": "translateY(100%) to translateY(0)"
+      },
+      "fadeIn": {
+        "duration": "200ms",
+        "easing": "ease-out",
+        "opacity": "0 to 1"
+      },
+      "scaleIn": {
+        "duration": "250ms",
+        "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+        "transform": "scale(0.8) to scale(1)"
+      }
+    }
+  },
+  "iconography": {
+    "style": "line",
+    "strokeWidth": "1.5px",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "commonIcons": {
+      "navigation": ["back", "forward", "menu", "close", "more"],
+      "actions": ["edit", "delete", "share", "lock", "pin", "copy"],
+      "media": ["image", "voice", "video", "file"],
+      "formatting": ["bold", "italic", "underline", "list", "heading", "link"],
+      "misc": ["search", "checkmark", "plus", "star", "calendar"]
+    }
+  },
+  "contentHierarchy": {
+    "noteCard": {
+      "title": {
+        "fontSize": "17px",
+        "fontWeight": 600,
+        "color": "#111827",
+        "lineClamp": 2,
+        "marginBottom": "8px"
+      },
+      "preview": {
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "color": "#6B7280",
+        "lineClamp": 3,
+        "lineHeight": "1.5"
+      },
+      "metadata": {
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "color": "#9CA3AF",
+        "marginTop": "8px"
+      }
+    },
+    "detailView": {
+      "title": {
+        "fontSize": "24px",
+        "fontWeight": 700,
+        "color": "#111827",
+        "marginBottom": "8px"
+      },
+      "metadata": {
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "color": "#6B7280",
+        "marginBottom": "20px"
+      },
+      "content": {
+        "fontSize": "17px",
+        "fontWeight": 400,
+        "color": "#374151",
+        "lineHeight": "1.625"
+      }
+    }
+  },
+  "specialFeatures": {
+    "lockedNote": {
+      "overlay": "rgba(249, 250, 251, 0.95)",
+      "blur": "8px",
+      "iconSize": "48px",
+      "iconColor": "#6B7280",
+      "labelFontSize": "15px",
+      "labelColor": "#6B7280"
+    },
+    "inlineMedia": {
+      "borderRadius": "12px",
+      "maxWidth": "100%",
+      "marginVertical": "12px",
+      "shadow": "0 2px 8px rgba(0, 0, 0, 0.08)"
+    },
+    "quotes": {
+      "borderLeft": "4px solid #8B5CF6",
+      "paddingLeft": "16px",
+      "fontStyle": "italic",
+      "color": "#4B5563",
+      "background": "#F9FAFB",
+      "padding": "12px 16px",
+      "borderRadius": "8px"
+    },
+    "callouts": {
+      "padding": "16px",
+      "borderRadius": "12px",
+      "borderLeft": "4px solid",
+      "fontSize": "15px",
+      "lineHeight": "1.5"
+    }
+  },
+  "responsiveBreakpoints": {
+    "mobile": "320px - 767px",
+    "tablet": "768px - 1023px",
+    "desktop": "1024px+"
+  },
+  "accessibilityGuidelines": {
+    "minimumTouchTarget": "44px",
+    "minimumTextSize": "15px",
+    "contrastRatio": "4.5:1 for normal text, 3:1 for large text",
+    "focusIndicators": "Always visible with 2px outline",
+    "semanticMarkup": "Use proper heading hierarchy, ARIA labels"
+  },
+  "platformSpecifics": {
+    "iOS": {
+      "statusBarHeight": "44px",
+      "safeAreaTop": "dynamic",
+      "safeAreaBottom": "34px for devices with home indicator",
+      "navigationBarHeight": "44px",
+      "tabBarHeight": "49px",
+      "hapticFeedback": "Use for interactions",
+      "swipeGestures": "Support back swipe from edge"
+    },
+    "android": {
+      "statusBarHeight": "24dp",
+      "navigationBarHeight": "56dp",
+      "elevation": "Use for depth hierarchy",
+      "rippleEffect": "Material ripple on touch",
+      "FABMargin": "16dp from edges"
+    }
+  },
+  "usagePatterns": {
+    "cardLayout": "Use masonry grid for note cards with consistent gaps",
+    "typography": "Establish clear hierarchy with size and weight variations",
+    "colorApplication": "Use neutral grays for UI, colors for highlights and accents",
+    "spacing": "Maintain consistent 8px grid system",
+    "shadows": "Use subtle shadows for depth, avoid heavy shadows",
+    "interactions": "Provide clear feedback with subtle animations",
+    "bottomToolbar": "Dark background with light icons for contrast",
+    "floatingElements": "Rounded corners and elevated shadows"
+  }
+}

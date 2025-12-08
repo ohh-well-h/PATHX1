@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Excited face -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M12,2C6.48,2 2,6.48 2,12S6.48,22 12,22 22,17.52 22,12 17.52,2 12,2ZM12,20C7.59,20 4,16.41 4,12S7.59,4 12,4 20,7.59 20,12 16.41,20 12,20Z" />
+    <!-- Excited eyes (stars) -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M9,9.5C9.83,9.5 10.5,8.83 10.5,8S9.83,6.5 9,6.5 7.5,7.17 7.5,8 8.17,9.5 9,9.5Z" />
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M15,9.5C15.83,9.5 16.5,8.83 16.5,8S15.83,6.5 15,6.5 13.5,7.17 13.5,8 14.17,9.5 15,9.5Z" />
+    <!-- Excited mouth -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M8,12C8,12 10,10 12,10 14,10 16,12 16,12" />
+</vector>
+

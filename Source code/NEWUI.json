@@ -1,0 +1,603 @@
+{
+  "designSystem": {
+    "name": "DayFlow - Modern Journaling & Planning App",
+    "version": "1.0",
+    "description": "A warm, illustration-driven design system for journaling and personal growth applications with earthy tones and playful illustrations",
+    "platform": "Mobile-first, iOS/Android"
+  },
+  "colorPalette": {
+    "primary": {
+      "darkGreen": "#2D4A3E",
+      "forestGreen": "#3A5A4A",
+      "sageGreen": "#5C7A68",
+      "mintGreen": "#7B9E87"
+    },
+    "accent": {
+      "gold": "#D4A574",
+      "warmOrange": "#E8A87C",
+      "peach": "#F5C9A6",
+      "cream": "#F4E8D8"
+    },
+    "neutral": {
+      "white": "#FFFFFF",
+      "offWhite": "#FAF8F5",
+      "lightBeige": "#F5F1EB",
+      "beige": "#E8E3DB",
+      "warmGray": "#D1CCC4",
+      "mediumGray": "#8B8680",
+      "darkGray": "#4A4A4A",
+      "charcoal": "#2C2C2C",
+      "black": "#1A1A1A"
+    },
+    "illustration": {
+      "skinTone": "#D4A589",
+      "hairBrown": "#8B5A3C",
+      "clothingBrown": "#7D5C48",
+      "accent1": "#E8A87C",
+      "accent2": "#C99A7B"
+    },
+    "background": {
+      "primary": "#FAF8F5",
+      "secondary": "#F5F1EB",
+      "card": "#FFFFFF",
+      "darkCard": "#2D4A3E",
+      "overlay": "rgba(0, 0, 0, 0.6)"
+    },
+    "semantic": {
+      "success": "#5C7A68",
+      "warning": "#D4A574",
+      "error": "#C97B7B",
+      "info": "#7B9E87"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "primary": "'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif",
+      "secondary": "'SF Pro Text', system-ui, sans-serif",
+      "heading": "'Poppins', 'Montserrat', sans-serif",
+      "body": "'Inter', -apple-system, sans-serif"
+    },
+    "fontSize": {
+      "xs": "11px",
+      "sm": "13px",
+      "base": "15px",
+      "md": "16px",
+      "lg": "18px",
+      "xl": "20px",
+      "2xl": "24px",
+      "3xl": "28px",
+      "4xl": "32px",
+      "5xl": "40px"
+    },
+    "fontWeight": {
+      "light": 300,
+      "regular": 400,
+      "medium": 500,
+      "semibold": 600,
+      "bold": 700,
+      "extrabold": 800
+    },
+    "lineHeight": {
+      "tight": "1.25",
+      "normal": "1.5",
+      "relaxed": "1.625",
+      "loose": "1.75"
+    }
+  },
+  "spacing": {
+    "xs": "4px",
+    "sm": "8px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "20px",
+    "2xl": "24px",
+    "3xl": "32px",
+    "4xl": "40px",
+    "5xl": "48px",
+    "6xl": "64px"
+  },
+  "borderRadius": {
+    "sm": "6px",
+    "md": "10px",
+    "lg": "12px",
+    "xl": "16px",
+    "2xl": "20px",
+    "3xl": "24px",
+    "4xl": "32px",
+    "full": "9999px",
+    "card": "20px",
+    "button": "16px",
+    "illustration": "16px"
+  },
+  "shadows": {
+    "none": "none",
+    "soft": "0 2px 8px rgba(0, 0, 0, 0.06)",
+    "medium": "0 4px 12px rgba(0, 0, 0, 0.08)",
+    "large": "0 8px 24px rgba(0, 0, 0, 0.12)",
+    "floating": "0 12px 32px rgba(0, 0, 0, 0.15)",
+    "card": "0 4px 16px rgba(0, 0, 0, 0.08)",
+    "illustration": "0 8px 20px rgba(45, 74, 62, 0.15)"
+  },
+  "layoutPatterns": {
+    "onboarding": {
+      "description": "Full-screen with illustration, heading, description, and CTA",
+      "illustrationHeight": "45vh",
+      "contentPadding": "24px",
+      "textAlignment": "center",
+      "ctaPosition": "bottom"
+    },
+    "dashboard": {
+      "description": "Card-based layout with user info, featured content, and navigation",
+      "headerHeight": "80px",
+      "cardSpacing": "16px",
+      "sectionSpacing": "24px"
+    },
+    "detailView": {
+      "description": "Clean reading view with header image and structured content",
+      "headerImageHeight": "240px",
+      "contentPadding": "24px",
+      "maxWidth": "100%"
+    }
+  },
+  "componentStyles": {
+    "heroIllustration": {
+      "container": {
+        "background": "#3A5A4A",
+        "borderRadius": "20px",
+        "padding": "32px",
+        "aspectRatio": "4:3",
+        "shadow": "0 8px 20px rgba(45, 74, 62, 0.15)"
+      },
+      "style": {
+        "illustrationType": "flat vector with subtle gradients",
+        "characterStyle": "simplified, friendly proportions",
+        "colorPalette": "warm earth tones",
+        "details": "minimal, clean lines"
+      }
+    },
+    "navigationBar": {
+      "height": "60px",
+      "padding": "12px 20px",
+      "background": "transparent",
+      "logoSize": "32px",
+      "menuIconSize": "24px",
+      "avatarSize": "40px"
+    },
+    "buttons": {
+      "primary": {
+        "height": "52px",
+        "borderRadius": "16px",
+        "background": "#D4A574",
+        "color": "#FFFFFF",
+        "fontSize": "17px",
+        "fontWeight": 600,
+        "padding": "16px 32px",
+        "shadow": "0 4px 12px rgba(212, 165, 116, 0.3)"
+      },
+      "secondary": {
+        "height": "48px",
+        "borderRadius": "14px",
+        "background": "#FFFFFF",
+        "color": "#2D4A3E",
+        "border": "2px solid #E8E3DB",
+        "fontSize": "16px",
+        "fontWeight": 500
+      },
+      "pill": {
+        "height": "36px",
+        "borderRadius": "18px",
+        "padding": "8px 16px",
+        "fontSize": "14px",
+        "fontWeight": 500,
+        "background": "#FFFFFF",
+        "color": "#4A4A4A",
+        "border": "1px solid #E8E3DB"
+      },
+      "pillActive": {
+        "background": "#2D4A3E",
+        "color": "#FFFFFF",
+        "border": "none"
+      }
+    },
+    "cards": {
+      "taskCard": {
+        "background": "#3A5A4A",
+        "borderRadius": "16px",
+        "padding": "20px",
+        "minHeight": "180px",
+        "textColor": "#FFFFFF",
+        "iconColor": "#FFFFFF",
+        "shadow": "0 4px 16px rgba(45, 74, 62, 0.2)"
+      },
+      "planCard": {
+        "background": "#5C7A68",
+        "borderRadius": "16px",
+        "padding": "20px",
+        "minHeight": "180px",
+        "textColor": "#FFFFFF",
+        "illustration": "mini chart or icon"
+      },
+      "reminderCard": {
+        "background": "#2C3C3C",
+        "borderRadius": "16px",
+        "padding": "20px",
+        "textColor": "#FFFFFF",
+        "accentColor": "#D4A574"
+      },
+      "contentCard": {
+        "background": "#FFFFFF",
+        "borderRadius": "20px",
+        "padding": "24px",
+        "shadow": "0 4px 16px rgba(0, 0, 0, 0.08)"
+      }
+    },
+    "userProfile": {
+      "avatar": {
+        "size": "48px",
+        "borderRadius": "50%",
+        "border": "2px solid #FFFFFF",
+        "shadow": "0 2px 8px rgba(0, 0, 0, 0.1)"
+      },
+      "name": {
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "color": "#1A1A1A"
+      },
+      "subtitle": {
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "color": "#8B8680"
+      }
+    },
+    "checkboxList": {
+      "item": {
+        "height": "44px",
+        "padding": "12px 16px",
+        "borderRadius": "8px",
+        "background": "transparent",
+        "marginBottom": "8px"
+      },
+      "checkbox": {
+        "size": "20px",
+        "borderRadius": "6px",
+        "border": "2px solid #FFFFFF",
+        "checkedBackground": "#FFFFFF",
+        "checkedIcon": "checkmark",
+        "iconColor": "#3A5A4A"
+      },
+      "text": {
+        "fontSize": "15px",
+        "fontWeight": 400,
+        "color": "#FFFFFF",
+        "strikethroughWhenChecked": true
+      }
+    },
+    "categoryTags": {
+      "pill": {
+        "height": "32px",
+        "padding": "6px 14px",
+        "borderRadius": "16px",
+        "fontSize": "13px",
+        "fontWeight": 500,
+        "spacing": "8px"
+      },
+      "variants": {
+        "all": {
+          "background": "#2D4A3E",
+          "color": "#FFFFFF"
+        },
+        "work": {
+          "background": "#FFFFFF",
+          "color": "#4A4A4A",
+          "border": "1px solid #E8E3DB"
+        },
+        "personal": {
+          "background": "#FFFFFF",
+          "color": "#4A4A4A",
+          "border": "1px solid #E8E3DB"
+        },
+        "family": {
+          "background": "#FFFFFF",
+          "color": "#4A4A4A",
+          "border": "1px solid #E8E3DB"
+        }
+      }
+    },
+    "summaryView": {
+      "header": {
+        "background": "#F5C9A6",
+        "borderRadius": "16px",
+        "padding": "32px",
+        "imageHeight": "200px",
+        "imageShadow": "0 8px 24px rgba(0, 0, 0, 0.15)"
+      },
+      "content": {
+        "padding": "24px",
+        "fontSize": "16px",
+        "lineHeight": "1.625",
+        "color": "#4A4A4A"
+      },
+      "keyPoints": {
+        "iconSize": "20px",
+        "iconColor": "#D4A574",
+        "textSize": "15px",
+        "spacing": "16px",
+        "bulletStyle": "emoji or icon"
+      }
+    }
+  },
+  "illustrations": {
+    "style": {
+      "type": "flat vector illustration",
+      "colorScheme": "warm earth tones with green accents",
+      "characterDesign": "simplified human figures with friendly proportions",
+      "objectStyle": "geometric, minimalist shapes",
+      "perspective": "slight 3D depth with layering"
+    },
+    "scenes": {
+      "onboarding": {
+        "background": "solid green with subtle gradient",
+        "foreground": "illustrated scene with character and environment",
+        "composition": "centered, balanced"
+      },
+      "dashboard": {
+        "background": "green card container",
+        "style": "scene-based with character and context",
+        "size": "fills card width"
+      }
+    },
+    "elements": {
+      "characters": {
+        "proportions": "simplified, approachable",
+        "clothing": "earth tone browns and warm colors",
+        "poses": "active, engaged",
+        "details": "minimal facial features"
+      },
+      "environment": {
+        "furniture": "simplified geometric shapes",
+        "objects": "clean, recognizable forms",
+        "depth": "layered foreground/background"
+      }
+    }
+  },
+  "contentHierarchy": {
+    "onboarding": {
+      "logo": {
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "color": "#D4A574",
+        "position": "top-left",
+        "marginBottom": "40px"
+      },
+      "heading": {
+        "fontSize": "32px",
+        "fontWeight": 700,
+        "color": "#FFFFFF",
+        "lineHeight": "1.25",
+        "marginBottom": "16px"
+      },
+      "body": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "color": "#E8E3DB",
+        "lineHeight": "1.625",
+        "marginBottom": "32px"
+      }
+    },
+    "dashboard": {
+      "greeting": {
+        "fontSize": "16px",
+        "fontWeight": 600,
+        "color": "#1A1A1A",
+        "marginBottom": "4px"
+      },
+      "subtitle": {
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "color": "#8B8680"
+      },
+      "cardTitle": {
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "color": "#FFFFFF",
+        "marginBottom": "8px"
+      },
+      "cardSubtitle": {
+        "fontSize": "14px",
+        "fontWeight": 400,
+        "color": "rgba(255, 255, 255, 0.8)"
+      }
+    },
+    "summaryView": {
+      "date": {
+        "fontSize": "13px",
+        "fontWeight": 400,
+        "color": "#8B8680",
+        "marginBottom": "8px"
+      },
+      "title": {
+        "fontSize": "28px",
+        "fontWeight": 700,
+        "color": "#1A1A1A",
+        "lineHeight": "1.3",
+        "marginBottom": "20px"
+      },
+      "description": {
+        "fontSize": "16px",
+        "fontWeight": 400,
+        "color": "#4A4A4A",
+        "lineHeight": "1.625"
+      },
+      "sectionHeading": {
+        "fontSize": "18px",
+        "fontWeight": 600,
+        "color": "#1A1A1A",
+        "marginTop": "24px",
+        "marginBottom": "12px"
+      }
+    }
+  },
+  "interactionStates": {
+    "button": {
+      "default": {
+        "scale": 1,
+        "opacity": 1
+      },
+      "hover": {
+        "scale": 1.02,
+        "opacity": 0.9,
+        "transition": "200ms ease"
+      },
+      "pressed": {
+        "scale": 0.98,
+        "opacity": 0.8,
+        "transition": "100ms ease"
+      }
+    },
+    "card": {
+      "default": {
+        "scale": 1,
+        "shadow": "medium"
+      },
+      "hover": {
+        "scale": 1.02,
+        "shadow": "large",
+        "transition": "250ms ease-out"
+      }
+    },
+    "checkbox": {
+      "unchecked": {
+        "background": "transparent",
+        "border": "2px solid #FFFFFF"
+      },
+      "checked": {
+        "background": "#FFFFFF",
+        "icon": "checkmark",
+        "animation": "scale bounce"
+      }
+    }
+  },
+  "animations": {
+    "pageTransition": {
+      "duration": "400ms",
+      "easing": "cubic-bezier(0.4, 0, 0.2, 1)",
+      "type": "slide and fade"
+    },
+    "cardReveal": {
+      "duration": "300ms",
+      "easing": "ease-out",
+      "type": "fade up",
+      "stagger": "100ms"
+    },
+    "buttonPress": {
+      "duration": "150ms",
+      "easing": "ease-in-out",
+      "type": "scale"
+    },
+    "checkboxCheck": {
+      "duration": "200ms",
+      "easing": "cubic-bezier(0.68, -0.55, 0.265, 1.55)",
+      "type": "scale bounce"
+    }
+  },
+  "iconography": {
+    "style": "line icons with rounded ends",
+    "strokeWidth": "2px",
+    "sizes": {
+      "sm": "16px",
+      "md": "20px",
+      "lg": "24px",
+      "xl": "32px"
+    },
+    "colors": {
+      "primary": "#FFFFFF",
+      "secondary": "#2D4A3E",
+      "accent": "#D4A574",
+      "muted": "#8B8680"
+    },
+    "commonIcons": {
+      "navigation": ["menu", "close", "back", "forward"],
+      "actions": ["edit", "delete", "share", "save", "add"],
+      "status": ["check", "x", "info", "alert"],
+      "content": ["image", "text", "calendar", "chart", "book"]
+    }
+  },
+  "dataVisualization": {
+    "charts": {
+      "style": "minimal, clean",
+      "colors": ["#5C7A68", "#7B9E87", "#D4A574", "#E8A87C"],
+      "gridLines": "subtle, #E8E3DB",
+      "bars": {
+        "borderRadius": "4px",
+        "spacing": "8px"
+      },
+      "lines": {
+        "strokeWidth": "3px",
+        "dotSize": "8px"
+      }
+    }
+  },
+  "specialFeatures": {
+    "darkCards": {
+      "background": "dark green (#2D4A3E, #3A5A4A)",
+      "textColor": "#FFFFFF",
+      "accentColor": "#D4A574",
+      "shadow": "0 4px 16px rgba(45, 74, 62, 0.2)",
+      "illustration": "inline mini illustrations"
+    },
+    "publishButton": {
+      "background": "#5C7A68",
+      "color": "#FFFFFF",
+      "borderRadius": "12px",
+      "fontSize": "15px",
+      "fontWeight": 600,
+      "padding": "10px 20px",
+      "position": "top-right"
+    },
+    "scrollIndicator": {
+      "type": "arrow in circle",
+      "size": "40px",
+      "background": "#FFFFFF",
+      "iconColor": "#2D4A3E",
+      "position": "absolute right",
+      "shadow": "0 2px 8px rgba(0, 0, 0, 0.1)"
+    }
+  },
+  "responsiveBreakpoints": {
+    "mobile": "320px - 767px",
+    "tablet": "768px - 1023px",
+    "desktop": "1024px+"
+  },
+  "accessibilityGuidelines": {
+    "minimumTouchTarget": "44px",
+    "minimumTextSize": "15px for body, 13px for secondary",
+    "contrastRatio": "4.5:1 minimum, white text on dark green backgrounds",
+    "focusIndicators": "2px solid outline with offset",
+    "semanticMarkup": "proper heading hierarchy and ARIA labels"
+  },
+  "platformSpecifics": {
+    "iOS": {
+      "statusBarStyle": "light for dark backgrounds, dark for light",
+      "safeAreaInsets": "respected for notch devices",
+      "navigationBarStyle": "transparent with blur",
+      "hapticFeedback": "light for buttons, medium for checkboxes"
+    },
+    "android": {
+      "statusBarColor": "matches background",
+      "navigationBarColor": "matches background",
+      "elevation": "4dp for cards, 8dp for floating elements",
+      "rippleEffect": "white ripple on dark backgrounds"
+    }
+  },
+  "usagePatterns": {
+    "onboarding": "Full-screen illustration with centered content and bottom CTA",
+    "dashboard": "Card-based layout with mixed content types, dark and light cards",
+    "categories": "Horizontal scrolling pill buttons for filtering",
+    "taskLists": "Checkboxes on dark cards with white text",
+    "summaryView": "Clean reading experience with image header and structured content",
+    "colorStrategy": "Dark green primary, warm gold/orange accents, light neutral backgrounds",
+    "illustrationStyle": "Friendly, simplified vector illustrations with warm earth tones",
+    "spacing": "Generous padding (20-24px) for breathing room",
+    "borderRadius": "Consistently rounded (16-20px) for friendly feel"
+  }
+}
